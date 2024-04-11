@@ -77,15 +77,15 @@ class MainActivity : ComponentActivity() {
             OutlinedTextField(
                 value = input,
                 onValueChange = { input = it },
-                label = { Text("Coloque o número") }
+                label = { Text("Número:") }
             )
             val str = result.toString()
             if(str == input){
-                val toast = Toast.makeText(getApplicationContext(), "Você venceu", Toast.LENGTH_SHORT);
+                val toast = Toast.makeText(getApplicationContext(), "Venceu", Toast.LENGTH_SHORT);
                 toast.show()
             }
             else{
-                val toast = Toast.makeText(getApplicationContext(), "Você perdeu", Toast.LENGTH_SHORT);
+                val toast = Toast.makeText(getApplicationContext(), "Perdeu", Toast.LENGTH_SHORT);
                 toast.show()
             }
         }
